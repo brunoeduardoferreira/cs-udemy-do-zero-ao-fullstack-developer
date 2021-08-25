@@ -3,9 +3,10 @@
 ## **Informações do Curso**
 <p>
  
-  **Curso**     : Do Zero ao FullStack Developer (Javascript) </br>
-  **Descrição** : Criando seu Portfolio de ponta a ponta com Mongo, Express, React e Node.js </br>
-  **Instrutor** : Reginaldo Santos
+  **Curso**      : Do Zero ao FullStack Developer (Javascript) </br>
+  **Plataforma** : Udemy </br>
+  **Descrição**  : Criando seu Portfolio de ponta a ponta com Mongo, Express, React e Node.js </br>
+  **Instrutor**  : Reginaldo Santos
   
 </p>
 

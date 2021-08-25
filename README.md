@@ -1,9 +1,9 @@
 # Curso Udemy - Do Zero ao FullStack Developer (Javascript)
 
 ## **Informações do Curso**
-Curso     : Do Zero ao FullStack Developer (Javascript)
-Descrição : Criando seu Portfolio de ponta a ponta com Mongo, Express, React e Node.js
-Instrutor : Reginaldo Santos
+<p>Curso  : Do Zero ao FullStack Developer (Javascript)</p>
+<p>Descrição : Criando seu Portfolio de ponta a ponta com Mongo, Express, React e Node.js</p>
+<p>Instrutor : Reginaldo Santos</p>
 
 ## Database
 * [MongoDB]()

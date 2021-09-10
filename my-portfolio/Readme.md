@@ -5,6 +5,7 @@
 * [ExpressJS]()
 * [Mongoose]()
 * [DotEnv]()
+* [Slug]()
 
 ```javascript
 

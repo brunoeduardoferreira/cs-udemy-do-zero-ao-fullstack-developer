@@ -1,14 +1,19 @@
 const router = require('express').Router();
 const Portfolio = require('../models/Portfolio');
 
-router.get('/', (req, res) => {
-  const portfolio = Portfolio.find();
-
-  res.json({
-    success: true,
-    data: portfolio
-  })
-
+router.get('/', async (req, res) => {
+  try {
+    const portfolio = await Portfolio.find();
+    res.json({
+      success: true,
+      data: portfolio
+    })
+  } catch (err) {
+    res.json({
+      success: false,
+      message: err
+    })
+  }
 });
 
 router.post('/', async (req, res) => {

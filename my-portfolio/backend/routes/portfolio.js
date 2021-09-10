@@ -52,7 +52,7 @@ router.post('/', async (req, res) => {
     res.json({
       success: false,
       message: error
-    })
+    });
   }
 });
 
@@ -66,13 +66,31 @@ router.patch('/:slug', async (req, res) => {
         description: req.body.description
       })
     res.json({
-      success: true
+      success: true,
+      updated: updatedPorfolio.nModified
     })
   } catch (error) {
     res.json({
       success: false,
       message: error
+    });
+  }
+});
+
+router.delete('/:slug', async (req, res) => {
+  try {
+    const deletedPortfolio = await Portfolio.deleteOne({
+      slug: req.params.slug
     })
+    res.json({
+      success: true,
+      deleted: deletedPortfolio.deletedCount
+    })
+  } catch (error) {
+    res.json({
+      success: false,
+      message: error
+    });
   }
 })
 

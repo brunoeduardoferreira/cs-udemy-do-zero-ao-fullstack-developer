@@ -8,13 +8,30 @@ router.get('/', async (req, res) => {
       success: true,
       data: portfolio
     })
-  } catch (err) {
+  } catch (error) {
     res.json({
       success: false,
-      message: err
+      message: error
     })
   }
 });
+
+router.get('/:slug', async (req, res) => {
+  try {
+    const portfolio = await Portfolio.findOne({
+      slug: req.params.slug
+    })
+    res.json({
+      success: true,
+      data: portfolio
+    })
+  } catch (error) {
+    res.json({
+      success: false,
+      message: error
+    })
+  }
+})
 
 router.post('/', async (req, res) => {
   const portfolio = new Portfolio({
@@ -28,10 +45,10 @@ router.post('/', async (req, res) => {
       success: true,
       data: savedPortfolio
     })
-  } catch (err) {
+  } catch (error) {
     res.json({
       success: false,
-      message: err
+      message: error
     })
   }
 });

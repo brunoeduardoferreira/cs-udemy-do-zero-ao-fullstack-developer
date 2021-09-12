@@ -6,6 +6,7 @@
 * [Mongoose]()
 * [DotEnv]()
 * [Slug]()
+* [Concurrently]()
 
 ```javascript
 
@@ -26,3 +27,4 @@
 * [ReactJS]()
 * [Styled Components]()
 * [Framer Motion]()
+* [Http Proxy Middleware]()

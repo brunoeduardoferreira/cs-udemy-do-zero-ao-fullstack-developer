@@ -4,6 +4,7 @@ const router = require('express').Router();
 require('../db/mongoConnection');
 
 const portfolio = require('./portfolio');
+const course = require('./course')
 
 router.get('/', (req, res) => {
   res.json({
@@ -13,5 +14,6 @@ router.get('/', (req, res) => {
 });
 
 router.use('/portfolio', portfolio);
+router.use('/course', course);
 
 module.exports = router;
